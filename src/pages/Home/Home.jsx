@@ -27,11 +27,9 @@ const Home = () => {
       ? `/jokes/${selectedType}/random`
       : "/jokes/random";
     const url = `${baseUrl}${endUrl}`;
-    console.log({url});
     
     try {
       const { data } = await axios.get(url);
-      console.log({ data });
       
       setJoke(selectedType ? data[0] : data);
     } catch (error) {
