@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Joke Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Joke Generator is a React-based web application that fetches and displays random jokes using the Official Joke API. Users can select specific joke types and generate new jokes with the click of a button.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetch and display random jokes
+- Select jokes by type (e.g., general, programming)
+- Responsive design for various screen sizes
+- Loading state indicator during API calls
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Axios for API requests
+- Styled Components for styling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/jokegenerator.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
+   ```
+   cd jokegenerator
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Open your browser and visit `http://localhost:3000`
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. When you open the application, you'll see a dropdown menu to select a joke type and a "Generate Joke" button.
+2. Choose a joke type from the dropdown menu (optional).
+3. Click the "Generate Joke" button to fetch a new joke.
+4. The joke will appear in a card below the button, displaying the setup and punchline.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Home
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The main component that orchestrates the joke fetching and display logic.
 
-## Learn More
+### JokeCard
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A component that renders the joke setup and punchline in a styled card.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Button
 
-### Code Splitting
+A reusable button component used for joke generation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## API
 
-### Analyzing the Bundle Size
+This project uses the [Official Joke API](https://official-joke-api.appspot.com) to fetch jokes. The base URL for the API is:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+https://official-joke-api.appspot.com
+```
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).
